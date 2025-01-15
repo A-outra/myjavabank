@@ -13,6 +13,7 @@ import java.util.Map;
 public class Customer {
 
     private AccountManager accountManager;
+    private int id;
     private Map<Integer, Account> accounts = new HashMap<>();
 
     /**
@@ -20,6 +21,15 @@ public class Customer {
      *
      * @param accountManager the account manager to set
      */
+    public Customer(int id) {
+        this.id = id;
+
+    }
+
+    public int getId (){
+        return id;
+    }
+
     public void setAccountManager(AccountManager accountManager) {
         this.accountManager = accountManager;
     }
@@ -44,6 +54,7 @@ public class Customer {
      * @return the account balance
      */
     public double getBalance(int id) {
+        System.out.println("The balance of account " + id + " is " + accounts.get(id).getBalance());
         return accounts.get(id).getBalance();
     }
 
@@ -57,10 +68,14 @@ public class Customer {
         double balance = 0;
 
         for (Account account : accounts.values()) {
+            //System.out.println("Account number " + );
             balance += account.getBalance();
         }
-
+        //System.out.println("The total balance of your accounts is " + balance);
         return balance;
     }
 
+    public Map <Integer,Account> getAccounts (){
+        return accounts;
+    }
 }

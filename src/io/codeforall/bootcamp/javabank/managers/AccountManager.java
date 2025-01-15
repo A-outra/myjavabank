@@ -42,6 +42,7 @@ public class AccountManager {
         }
 
         accountMap.put(newAccount.getId(), newAccount);
+        System.out.println("Your " + accountType + " account is open.");
         return newAccount;
     }
 
