@@ -1,4 +1,4 @@
-package io.codeforall.bootcamp.javabank.application;
+/*package io.codeforall.bootcamp.javabank.application;
 
 import io.codeforall.bootcamp.javabank.application.operations.BalanceOperation;
 import io.codeforall.bootcamp.javabank.application.operations.NewAccountOperation;
@@ -16,7 +16,7 @@ import java.util.Map;
 /**
  * The bank application
  */
-public class BankApplication {
+/*public class BankApplication {
 
     private Prompt prompt;
     private MenuInputScanner mainMenu;
@@ -30,7 +30,7 @@ public class BankApplication {
      *
      * @param bank the bank instance
      */
-    public BankApplication(Bank bank) {
+    /*public BankApplication(Bank bank) {
         this.bank = bank;
         this.prompt = new Prompt(System.in, System.out);
     }
@@ -40,7 +40,7 @@ public class BankApplication {
      *
      * @return the prompt
      */
-    public Prompt getPrompt() {
+    /*public Prompt getPrompt() {
         return prompt;
     }
 
@@ -49,7 +49,7 @@ public class BankApplication {
      *
      * @return the bank
      */
-    public Bank getBank() {
+    /*public Bank getBank() {
         return bank;
     }
 
@@ -58,14 +58,14 @@ public class BankApplication {
      *
      * @return the customer id
      */
-    public int getAccessingCustomerId() {
+    /*public int getAccessingCustomerId() {
         return accessingCustomerId;
     }
 
     /**
      * Starts the bank application
      */
-    public void start() {
+    /*public void start() {
 
         mainMenu = buildMainMenu();
 
@@ -115,3 +115,4 @@ public class BankApplication {
         return map;
     }
 }
+*/

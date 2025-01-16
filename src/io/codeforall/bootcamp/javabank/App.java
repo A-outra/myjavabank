@@ -1,6 +1,6 @@
 package io.codeforall.bootcamp.javabank;
 
-import io.codeforall.bootcamp.javabank.application.BankApplication;
+//import io.codeforall.bootcamp.javabank.application.BankApplication;
 import io.codeforall.bootcamp.javabank.controllers.WelcomeController;
 import io.codeforall.bootcamp.javabank.domain.Bank;
 import io.codeforall.bootcamp.javabank.domain.Customer;
@@ -10,12 +10,13 @@ import io.codeforall.bootcamp.javabank.views.WelcomeView;
 public class App {
 
     public static void main(String[] args) {
-
-
         Bank bank = new Bank();
-        WelcomeController welcomeController = new WelcomeController(?);
+        WelcomeController welcomeController = new WelcomeController();
         AccountManager accountManager = new AccountManager();
         bank.setAccountManager(accountManager);
+
+        InitializationMenu initializationMenu = new InitializationMenu();
+        initializationMenu.start();
 
         Customer c1 = new Customer(1, "Rui");
         Customer c2 = new Customer(2, "Sergio");
@@ -24,7 +25,7 @@ public class App {
         bank.addCustomer(c2);
         bank.addCustomer(c3);
 
-        BankApplication bankApplication = new BankApplication(bank);
+        //BankApplication bankApplication = new BankApplication(bank);
         welcomeController.start();
     }
 }
